@@ -1,11 +1,12 @@
 {
     "name": "Drania-Launcher",
     "preductname": "Drania Launcher",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Launcher Mincraft Du Serveur DraniaMC",
     "main": "src/app.js",
     "author": "Nekiox",
     "url": "http://drania.fr",
+    "azauth": "https://mc.drania.fr",
     "engines": {
         "node": "^18.x.x"
     },
@@ -21,7 +22,9 @@
     "dependencies": {
         "electron-updater": "^5.0.1",
         "minecraft-java-core": "^3.1.1",
-        "node-fetch": "^2.6.7"
+        "minecraft-java-core-riptiaz": "^2.5.1",
+        "node-fetch": "^2.6.7",
+        "xml-js": "^1.6.11"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
