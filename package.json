@@ -1,12 +1,12 @@
 {
     "name": "Drania-Launcher",
     "preductname": "Drania Launcher",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Launcher Mincraft Du Serveur DraniaMC",
     "main": "src/app.js",
     "author": "Nekiox",
-    "url": "http://drania.fr",
-    "azauth": "https://mc.drania.fr",
+    "url": "https://launcher.drania.fr",
+    "azauth": "https://drania.fr",
     "engines": {
         "node": "^18.x.x"
     },
