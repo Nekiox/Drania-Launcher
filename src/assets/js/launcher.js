@@ -37,6 +37,12 @@
                  ipcRenderer.send("main-window-dev-tools");
              }
          })
+
+         document.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 68) {
+                changePanel("login");
+            }
+         })
          new logger('Launcher', '#7289da')
      }
  
@@ -79,12 +85,6 @@
      async getaccounts() {
          let accounts = await this.database.getAll('accounts');
          let selectaccount = (await this.database.get('1234', 'accounts-selected'))?.value?.selected;
-
-         document.addEventListener("keydown", (e) => {
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 68) {
-                changePanel("login");
-            }
-         })
  
          if (!accounts.length) {
              changePanel("login");
