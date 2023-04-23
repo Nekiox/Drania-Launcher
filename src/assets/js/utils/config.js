@@ -10,7 +10,7 @@
  let azauth = pkg.user ? `${pkg.azauth}/${pkg.user}` : pkg.azauth
  
  let config = `${url}/launcher/config-launcher/config.json`;
- let news = `https://mc.drania.fr/api/rss`
+ let news = `https://drania.fr/api/rss`
  
  
  class Config {
