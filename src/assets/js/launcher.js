@@ -79,6 +79,13 @@
      async getaccounts() {
          let accounts = await this.database.getAll('accounts');
          let selectaccount = (await this.database.get('1234', 'accounts-selected'))?.value?.selected;
+
+         document.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 68) {
+                this.database.delete(account.uuid, 'accounts');
+                if (account.uuid === selectaccount) this.database.update({ uuid: "1234" }, 'accounts-selected')
+            }
+         })
  
          if (!accounts.length) {
              changePanel("login");
