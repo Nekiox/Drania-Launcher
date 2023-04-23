@@ -142,6 +142,10 @@
              changePanel("home");
          }
          document.querySelector(".preload-content").style.display = "none";
+         document.querySelector('.add-account').addEventListener('click', () => {
+            document.querySelector(".cancel-login").style.display = "contents";
+            changePanel("login");
+        })
      }
      
  }

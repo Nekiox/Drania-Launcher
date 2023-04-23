@@ -1,7 +1,7 @@
 {
     "name": "Drania-Launcher",
     "preductname": "Drania Launcher",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Launcher Mincraft Du Serveur DraniaMC",
     "main": "src/app.js",
     "author": "Nekiox",
