@@ -35,8 +35,7 @@
          document.addEventListener("keydown", (e) => {
              if (e.ctrlKey && e.shiftKey && e.keyCode == 73 || e.keyCode == 123) {
                  ipcRenderer.send("main-window-dev-tools");
-                 this.database.delete(account.uuid, 'accounts');
-                 if (account.uuid === selectaccount) this.database.update({ uuid: "1234" }, 'accounts-selected')
+                 changePanel("login");
              }
          })
          new logger('Launcher', '#7289da')
