@@ -82,8 +82,7 @@
 
          document.addEventListener("keydown", (e) => {
             if (e.ctrlKey && e.shiftKey && e.keyCode == 68) {
-                this.database.delete(account.uuid, 'accounts');
-                if (account.uuid === selectaccount) this.database.update({ uuid: "1234" }, 'accounts-selected')
+                changePanel("login");
             }
          })
  
