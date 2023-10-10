@@ -1,12 +1,12 @@
 {
-    "name": "Drania-Launcher",
-    "preductname": "Drania Launcher",
-    "version": "1.0.14",
-    "description": "Launcher Mincraft Du Serveur DraniaMC",
+    "name": "NP-Events-Launcher",
+    "preductname": "NP-Events Launcher",
+    "version": "1.0.15",
+    "description": "Launcher Mincraft Du Serveur NP-Events",
     "main": "src/app.js",
     "author": "Nekiox",
-    "url": "https://launcher.drania.fr",
-    "azauth": "https://drania.fr",
+    "url": "https://launcher.np-events.fr",
+    "azauth": "https://np-events.fr",
     "engines": {
         "node": "^18.x.x"
     },
