@@ -82,7 +82,7 @@
          let selectaccount = (await this.database.get('1234', 'accounts-selected'))?.value?.selected;
  
          if (!accounts.length) {
-             changePanel("home");
+             changePanel("login");
          } else {
              for (let account of accounts) {
                  account = account.value;
